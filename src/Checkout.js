@@ -2,10 +2,10 @@ import React from 'react';
 import './Checkout.css';
 import { useStateValue } from './StateProvider';
 import Subtotal from './Subtotal';
-import CheckoutProduct from'./CheckoutProduct'
+import CheckoutProduct from'./CheckoutProduct';
 
 function Checkout() {
-  const [{basket,user}, dispatch]=useStateValue();
+  const [{basket,user}]=useStateValue();
   return (
     <div className='checkout'>
         {/* div for left side of checkout page */}
@@ -37,4 +37,4 @@ function Checkout() {
   )
 }
 
-export default Checkout
+export default Checkout;
